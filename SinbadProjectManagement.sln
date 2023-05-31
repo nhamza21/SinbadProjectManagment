@@ -1,0 +1,74 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{EBCDF163-19E3-4ECE-82D2-0C0737B03C75}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SinbadProjectManagement.API", "src\SinbadProjectManagement.API\SinbadProjectManagement.API.csproj", "{94AF93F2-28B5-4227-A15F-94540FD57AAD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SinbadProjectManagement.Application", "src\SinbadProjectManagement.Application\SinbadProjectManagement.Application.csproj", "{3A71227F-EAB2-4F62-8212-C03758A7960A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SinbadProjectManagement.Domain", "src\SinbadProjectManagement.Domain\SinbadProjectManagement.Domain.csproj", "{3E2D447A-DAB0-473B-BA63-01BBFFD1B51D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SinbadProjectManagement.Infrastructure", "SinbadProjectManagement.Infrastructure", "{632C594C-6D19-4B10-A0E9-9308E598CAF6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SinbadProjectManagement.Infrastructure.Persistance", "src\SinbadProjectManagement.Infrastructure\SinbadProjectManagement.Infrastructure.Persistance\SinbadProjectManagement.Infrastructure.Persistance.csproj", "{D08417A0-DE8F-4574-A2C8-DC9AE870166B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SinbadProjectManagement.Common", "src\SinbadProjectManagement.Common\SinbadProjectManagement.Common.csproj", "{056FE609-7A3B-470C-8849-6A02BCCDBCDA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{D8851479-8145-4929-AD7A-365CD38438DF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SinbadProjectManagement.Application.Tests", "tests\SinbadProjectManagement.Application.Tests\SinbadProjectManagement.Application.Tests.csproj", "{DE354448-FB79-46C6-B587-F2BEDDFB42C7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SinbadProjectManagement.Infrastructure.Persistance.Tests", "tests\SinbadProjectManagement.Infrastructure.Persistance.Tests\SinbadProjectManagement.Infrastructure.Persistance.Tests.csproj", "{2FC28F09-A743-4B99-8B10-5736229249EB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{94AF93F2-28B5-4227-A15F-94540FD57AAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94AF93F2-28B5-4227-A15F-94540FD57AAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94AF93F2-28B5-4227-A15F-94540FD57AAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94AF93F2-28B5-4227-A15F-94540FD57AAD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A71227F-EAB2-4F62-8212-C03758A7960A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A71227F-EAB2-4F62-8212-C03758A7960A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A71227F-EAB2-4F62-8212-C03758A7960A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A71227F-EAB2-4F62-8212-C03758A7960A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E2D447A-DAB0-473B-BA63-01BBFFD1B51D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E2D447A-DAB0-473B-BA63-01BBFFD1B51D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E2D447A-DAB0-473B-BA63-01BBFFD1B51D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E2D447A-DAB0-473B-BA63-01BBFFD1B51D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D08417A0-DE8F-4574-A2C8-DC9AE870166B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D08417A0-DE8F-4574-A2C8-DC9AE870166B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D08417A0-DE8F-4574-A2C8-DC9AE870166B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D08417A0-DE8F-4574-A2C8-DC9AE870166B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{056FE609-7A3B-470C-8849-6A02BCCDBCDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{056FE609-7A3B-470C-8849-6A02BCCDBCDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{056FE609-7A3B-470C-8849-6A02BCCDBCDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{056FE609-7A3B-470C-8849-6A02BCCDBCDA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE354448-FB79-46C6-B587-F2BEDDFB42C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE354448-FB79-46C6-B587-F2BEDDFB42C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE354448-FB79-46C6-B587-F2BEDDFB42C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE354448-FB79-46C6-B587-F2BEDDFB42C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2FC28F09-A743-4B99-8B10-5736229249EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FC28F09-A743-4B99-8B10-5736229249EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FC28F09-A743-4B99-8B10-5736229249EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FC28F09-A743-4B99-8B10-5736229249EB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{94AF93F2-28B5-4227-A15F-94540FD57AAD} = {EBCDF163-19E3-4ECE-82D2-0C0737B03C75}
+		{3A71227F-EAB2-4F62-8212-C03758A7960A} = {EBCDF163-19E3-4ECE-82D2-0C0737B03C75}
+		{3E2D447A-DAB0-473B-BA63-01BBFFD1B51D} = {EBCDF163-19E3-4ECE-82D2-0C0737B03C75}
+		{632C594C-6D19-4B10-A0E9-9308E598CAF6} = {EBCDF163-19E3-4ECE-82D2-0C0737B03C75}
+		{D08417A0-DE8F-4574-A2C8-DC9AE870166B} = {632C594C-6D19-4B10-A0E9-9308E598CAF6}
+		{056FE609-7A3B-470C-8849-6A02BCCDBCDA} = {EBCDF163-19E3-4ECE-82D2-0C0737B03C75}
+		{DE354448-FB79-46C6-B587-F2BEDDFB42C7} = {D8851479-8145-4929-AD7A-365CD38438DF}
+		{2FC28F09-A743-4B99-8B10-5736229249EB} = {D8851479-8145-4929-AD7A-365CD38438DF}
+	EndGlobalSection
+EndGlobal

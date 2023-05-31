@@ -1,0 +1,39 @@
+version: "3.9"
+services:
+  sinbad-management-api:
+    image: ${DOCKER_REGISTRY}/${DOCKER_REPO}/sinbad-management-api:${DOCKER_BASE_IMAGE_TAG}
+    build:
+      context: ../
+      dockerfile: src/SinbadProjectManagement.API/Dockerfile
+    container_name: sinbad-management-api
+    restart: unless-stopped
+    ports:
+      - 6001:80
+    mem_limit: "1g"
+    mem_reservation: "512m"
+    networks:
+      - sinbad-management
+
+  sinbad-management-web-ui:
+    image: ${DOCKER_REGISTRY}/${DOCKER_REPO}/sinbad-management-web-ui:${DOCKER_BASE_IMAGE_TAG}
+    build: 
+      context: ../
+      dockerfile: src/WebUI/SinbadProjectManagementUI/dockerfile
+    container_name: sinbad-management-web-ui
+    depends_on:
+      - sinbad-management-api
+    restart: unless-stopped
+    mem_limit: "1g"
+    mem_reservation: "512m"
+    ports: 
+      - 4200:4200
+    networks:
+      - sinbad-management
+
+networks:
+  sinbad-management:
+    name: sinbad-management
+    external: true
+    # ipam:
+    #   config:
+    #     - subnet: 172.21.0.0/24
